@@ -23,8 +23,8 @@ module.exports = {
     selenium: {
         start_process: true,
         server_path: seleniumServer.path,
-        // host: '127.0.0.1',
-        // port: 4444,
+        host: '127.0.0.1',
+        port: 4444,
         // cli_args: {
         //     "webdriver.chrome.driver" : "/usr/local/share/chromedriver",
         //     "webdriver.gecko.driver" : "/usr/local/share/geckodriver",
@@ -35,7 +35,7 @@ module.exports = {
     //test_workers: {"enabled" : true, "workers" : "auto"},
     test_settings: {
         default: {
-            launch_url: 'https://allo.ua',
+            launch_url: '',
             selenium_port: 4444,
             selenium_host: '127.0.0.1',
             silent: true,
@@ -59,6 +59,22 @@ module.exports = {
                 acceptSslCerts: true
             }
         }
+        "jenkins" : {
+            "selenium_port"  : 4444,
+            "selenium_host"  : "127.0.0.1",
+            "cli_args" : {
+                "webdriver.chrome.driver" : "/usr/local/share/chromedriver"
+        },
+        "chromeOptions" : {
+             "args" : ["--no-sandbox"]
+        },
+            "desiredCapabilities": {
+                "browserName": "chrome",
+                "javascriptEnabled": true,
+                "acceptSslCerts": true,
+                "platform" : "LINUX",
+            }
+    }
     }
 
 }
