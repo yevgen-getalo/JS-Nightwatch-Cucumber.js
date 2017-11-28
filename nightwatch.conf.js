@@ -23,8 +23,8 @@ module.exports = {
     selenium: {
         start_process: true,
         server_path: seleniumServer.path,
-        host: '127.0.0.1',
-        port: 4444,
+//         host: '127.0.0.1',
+//         port: 4444,
         // cli_args: {
         //     "webdriver.chrome.driver" : "/usr/local/share/chromedriver",
         //     "webdriver.gecko.driver" : "/usr/local/share/geckodriver",
@@ -62,14 +62,13 @@ module.exports = {
         jenkins: {
             selenium_port  : 4444,
             selenium_host  : "127.0.0.1",
-            cli_args : {
-                "webdriver.chrome.driver" : "/usr/local/share/chromedriver"
-        },
+//             cli_args : {
+//                 "webdriver.chrome.driver" : "/usr/local/share/chromedriver"
+//         },
             desiredCapabilities: {
-                browserName: "chrome",
+                browserName: 'chrome',
                 javascriptEnabled: true,
                 acceptSslCerts: true,
-                platform : "LINUX",
             }
     }
     }
