@@ -21,10 +21,10 @@ module.exports = {
 
     // Sets configuration for Selenium Server
     selenium: {
-        start_process: true,
-        server_path: seleniumServer.path,
-        host: '127.0.0.1',
-        port: 4444,
+        start_process: false,
+        // server_path: seleniumServer.path,
+        // host: '127.0.0.1',
+        // port: 4444,
         // cli_args: {
         //     "webdriver.chrome.driver" : "/usr/local/share/chromedriver",
         //     "webdriver.gecko.driver" : "/usr/local/share/geckodriver",
@@ -35,7 +35,9 @@ module.exports = {
     //test_workers: {"enabled" : true, "workers" : "auto"},
     test_settings: {
         default: {
-            launch_url: 'https://allo.ua',
+            launch_url: 'http://localhost:8087',
+            selenium_port: 4444,
+            selenium_host: '127.0.0.1',
             silent: true,
             desiredCapabilities: {
                 browserName: 'chrome',
