@@ -35,7 +35,7 @@ module.exports = {
     //test_workers: {"enabled" : true, "workers" : "auto"},
     test_settings: {
         default: {
-            launch_url: 'http://localhost:8087',
+            launch_url: 'https://allo.ua',
             selenium_port: 4444,
             selenium_host: '127.0.0.1',
             silent: true,
@@ -48,7 +48,7 @@ module.exports = {
                 enabled: true,
                 on_error: true,
                 on_failure: true,
-                path: '/screenshots'
+                path: 'screenshots'
             }
         },
         firefox: {
