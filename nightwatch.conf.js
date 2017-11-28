@@ -59,20 +59,20 @@ module.exports = {
                 acceptSslCerts: true
             }
         }
-        "jenkins" : {
-            "selenium_port"  : 4444,
-            "selenium_host"  : "127.0.0.1",
-            "cli_args" : {
+        jenkins: {
+            selenium_port  : 4444,
+            selenium_host  : "127.0.0.1",
+            cli_args : {
                 "webdriver.chrome.driver" : "/usr/local/share/chromedriver"
         },
-        "chromeOptions" : {
-             "args" : ["--no-sandbox"]
+        chromeOptions : {
+             args : ["--no-sandbox"]
         },
-            "desiredCapabilities": {
-                "browserName": "chrome",
-                "javascriptEnabled": true,
-                "acceptSslCerts": true,
-                "platform" : "LINUX",
+            desiredCapabilities: {
+                browserName: "chrome",
+                javascriptEnabled: true,
+                acceptSslCerts: true,
+                platform : "LINUX",
             }
     }
     }
