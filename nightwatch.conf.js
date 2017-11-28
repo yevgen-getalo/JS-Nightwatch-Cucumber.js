@@ -22,7 +22,7 @@ module.exports = {
     // Sets configuration for Selenium Server
     selenium: {
         start_process: true,
-        // server_path: seleniumServer.path,
+        server_path: seleniumServer.path,
         // host: '127.0.0.1',
         // port: 4444,
         // cli_args: {
