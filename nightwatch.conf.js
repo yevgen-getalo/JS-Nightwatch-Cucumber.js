@@ -44,7 +44,7 @@ module.exports = {
                 javascriptEnabled: true,
                 acceptSslCerts: true,
                 chromeOptions: {
-                    args : ["--no-sandbox"]
+                    args : ['no-sandbox']
                 }
             },
             screenshots: {
