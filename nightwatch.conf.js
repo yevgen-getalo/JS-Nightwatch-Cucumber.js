@@ -42,7 +42,10 @@ module.exports = {
             desiredCapabilities: {
                 browserName: 'chrome',
                 javascriptEnabled: true,
-                acceptSslCerts: true
+                acceptSslCerts: true,
+                chromeOptions: {
+                    args : ["--no-sandbox"]
+                }
             },
             screenshots: {
                 enabled: true,
@@ -59,18 +62,6 @@ module.exports = {
                 acceptSslCerts: true
             }
         },
-        jenkins: {
-            selenium_port  : 4444,
-            selenium_host  : "127.0.0.1",
-//             cli_args : {
-//                 "webdriver.chrome.driver" : "/usr/local/share/chromedriver"
-//         },
-            desiredCapabilities: {
-                browserName: 'chrome',
-                javascriptEnabled: true,
-                acceptSslCerts: true,
-            }
-    }
     }
 
 }
