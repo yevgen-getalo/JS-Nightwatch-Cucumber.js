@@ -65,9 +65,6 @@ module.exports = {
             cli_args : {
                 "webdriver.chrome.driver" : "/usr/local/share/chromedriver"
         },
-        chromeOptions : {
-             args : ["--no-sandbox"]
-        },
             desiredCapabilities: {
                 browserName: "chrome",
                 javascriptEnabled: true,
