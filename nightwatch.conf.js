@@ -1,5 +1,10 @@
 var seleniumServer = require('selenium-server')
 var nightwatchCucumber = require('nightwatch-cucumber')
+var chromeDriver = require('chromedriver');
+var webdriver = require('selenium-webdriver');
+var driver = new webdriver.Builder()
+  .forBrowser('chrome')
+  .build();
 
 // Handles the runner, location of feature files and step definitions,
 // and closing of nightwatch
@@ -23,6 +28,7 @@ module.exports = {
     selenium: {
         start_process: true,
         server_path: seleniumServer.path,
+        chromedriver: chromeDriver.path,
 //         host: '127.0.0.1',
 //         port: 4444,
         // cli_args: {
