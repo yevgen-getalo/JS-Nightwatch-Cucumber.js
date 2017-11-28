@@ -25,10 +25,10 @@ module.exports = {
         server_path: seleniumServer.path,
         host: '127.0.0.1',
         port: 4444,
-        cli_args: {
-            "webdriver.chrome.driver" : "/usr/local/share/chromedriver",
-            "webdriver.gecko.driver" : "/usr/local/share/geckodriver",
-        }
+        // cli_args: {
+        //     "webdriver.chrome.driver" : "/usr/local/share/chromedriver",
+        //     "webdriver.gecko.driver" : "/usr/local/share/geckodriver",
+        // }
     },
 
     // Sets config options for different testing environments defined by the user
