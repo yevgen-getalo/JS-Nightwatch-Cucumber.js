@@ -58,7 +58,7 @@ module.exports = {
                 javascriptEnabled: true,
                 acceptSslCerts: true
             }
-        }
+        },
         jenkins: {
             selenium_port  : 4444,
             selenium_host  : "127.0.0.1",
