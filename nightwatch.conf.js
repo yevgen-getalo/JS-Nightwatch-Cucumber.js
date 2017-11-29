@@ -22,7 +22,7 @@ module.exports = {
 
     // Sets configuration for Selenium Server
     selenium: {
-        start_process: false,
+        start_process: true,
         server_path: 'node_modules/selenium-server/lib/runner/selenium-server-standalone-3.7.1.jar',
         chromedriver: chromeDriver.path,
 //         host: 'localhost',
