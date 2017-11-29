@@ -1,4 +1,4 @@
-var seleniumServer = require('selenium-server-standalone')
+var seleniumServer = require('selenium-server')
 var nightwatchCucumber = require('nightwatch-cucumber')
 var chromeDriver = require('chromedriver');
 
@@ -22,7 +22,7 @@ module.exports = {
 
     // Sets configuration for Selenium Server
     selenium: {
-        start_process: true,
+        start_process: false,
         server_path: seleniumServer.path,
         chromedriver: chromeDriver.path,
 //         host: '127.0.0.1',
@@ -46,7 +46,7 @@ module.exports = {
                 javascriptEnabled: true,
                 acceptSslCerts: true,
                 chromeOptions : {
-                    args : ['--headless', '--disable-gpu=true']
+                    args : ['headless', 'disable-gpu=true']
                 }
             },
             screenshots: {
