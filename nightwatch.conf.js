@@ -45,6 +45,9 @@ module.exports = {
                 browserName: 'chrome',
                 javascriptEnabled: true,
                 acceptSslCerts: true,
+                chromeOptions : {
+                    args : ['--headless']
+                }
             },
             screenshots: {
                 enabled: true,
