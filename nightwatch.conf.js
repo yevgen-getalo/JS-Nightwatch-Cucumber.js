@@ -37,16 +37,16 @@ module.exports = {
     //test_workers: {"enabled" : true, "workers" : "auto"},
     test_settings: {
         default: {
-            launch_url: '',
-            selenium_port: 4444,
-            selenium_host: '127.0.0.1',
+            launch_url: 'http://localhost',
+            selenium_port: 8888,
+            selenium_host: 'localhost',
             silent: true,
             desiredCapabilities: {
                 browserName: 'chrome',
                 javascriptEnabled: true,
                 acceptSslCerts: true,
                 chromeOptions : {
-                    args : ['headless', 'disable-gpu=true']
+                    args : ['--headless', '--disable-gpu=true']
                 }
             },
             screenshots: {
