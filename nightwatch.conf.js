@@ -24,8 +24,8 @@ module.exports = {
     selenium: {
         start_process: true,
         server_path: seleniumServer.path,
-        start_session: true
-        //chromedriver: chromeDriver.path,
+        start_session: true,
+        chromedriver: chromeDriver.path,
     },
 
     // Sets config options for different testing environments defined by the user
