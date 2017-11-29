@@ -1,10 +1,6 @@
 var seleniumServer = require('selenium-server')
 var nightwatchCucumber = require('nightwatch-cucumber')
 var chromeDriver = require('chromedriver');
-var webdriver = require('selenium-webdriver');
-var driver = new webdriver.Builder()
-  .forBrowser('chrome')
-  .build();
 
 // Handles the runner, location of feature files and step definitions,
 // and closing of nightwatch
