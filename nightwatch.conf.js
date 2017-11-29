@@ -24,13 +24,7 @@ module.exports = {
     selenium: {
         start_process: true,
         server_path: '/node_modules/selenium-server/lib/runner/selenium-server-standalone-3.7.1.jar',
-        chromedriver: chromeDriver.path,
-//         host: 'localhost',
-//         port: 8888,
-        // cli_args: {
-        //     "webdriver.chrome.driver" : "/usr/local/share/chromedriver",
-        //     "webdriver.gecko.driver" : "/usr/local/share/geckodriver",
-        // }
+        //chromedriver: chromeDriver.path,
     },
 
     // Sets config options for different testing environments defined by the user
@@ -38,7 +32,7 @@ module.exports = {
     test_settings: {
         default: {
             launch_url: 'http://localhost',
-            selenium_port: 4445,
+            selenium_port: 4444,
             selenium_host: 'localhost',
             silent: true,
             desiredCapabilities: {
@@ -55,15 +49,6 @@ module.exports = {
                 on_failure: true,
                 path: 'screenshots'
             }
-        },
-        firefox: {
-            desiredCapabilities: {
-                browserName: 'firefox',
-                marionette: true,
-                javascriptEnabled: true,
-                acceptSslCerts: true
-            }
-        },
+        }
     }
-
 }
