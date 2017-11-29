@@ -23,7 +23,7 @@ module.exports = {
     // Sets configuration for Selenium Server
     selenium: {
         start_process: true,
-        server_path: '/var/lib/jenkins/workspace/NightWatchCucumber/node_modules/selenium-server/lib/selenium-server.js',
+        server_path: seleniumServer.path,
         start_session: true
         //chromedriver: chromeDriver.path,
     },
