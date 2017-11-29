@@ -41,7 +41,7 @@ module.exports = {
                 javascriptEnabled: true,
                 acceptSslCerts: true,
                 chromeOptions : {
-                    args : ['--headless', '--disable-gpu=true']
+                    args : ['--headless', '--disable-gpu']
                 }
             },
             screenshots: {
