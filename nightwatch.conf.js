@@ -1,4 +1,4 @@
-var seleniumServer = require('selenium-server')
+var seleniumServer = require('selenium-server-standalone')
 var nightwatchCucumber = require('nightwatch-cucumber')
 var chromeDriver = require('chromedriver');
 
@@ -22,8 +22,8 @@ module.exports = {
 
     // Sets configuration for Selenium Server
     selenium: {
-        start_process: false,
-        server_path: '/home/user/Downloads/selenium-server-standalone-3.7.1.jar',
+        start_process: true,
+        server_path: seleniumServer.path,
         chromedriver: chromeDriver.path,
 //         host: '127.0.0.1',
 //         port: 4444,
