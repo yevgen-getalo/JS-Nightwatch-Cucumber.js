@@ -25,8 +25,8 @@ module.exports = {
         start_process: true,
         server_path: seleniumServer.path,
         chromedriver: chromeDriver.path,
-//         host: '127.0.0.1',
-//         port: 4444,
+        host: 'localhost',
+        port: 8888,
         // cli_args: {
         //     "webdriver.chrome.driver" : "/usr/local/share/chromedriver",
         //     "webdriver.gecko.driver" : "/usr/local/share/geckodriver",
