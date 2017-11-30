@@ -40,9 +40,9 @@ module.exports = {
                 browserName: 'chrome',
                 javascriptEnabled: true,
                 acceptSslCerts: true,
-                chromeOptions : {
-                    args : ['--headless', '--disable-gpu']
-                }
+//                 chromeOptions : {
+//                     args : ['--headless', '--disable-gpu']
+//                 }
             },
             screenshots: {
                 enabled: true,
