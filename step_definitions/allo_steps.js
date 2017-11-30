@@ -2,7 +2,6 @@
 module.exports = function () {
     this.Given(/^open homepage "([^"]*)"$/, function (page) {
         this
-            .init()
             .useXpath()
             .windowMaximize()
             .url(page)
