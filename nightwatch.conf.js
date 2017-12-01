@@ -22,7 +22,7 @@ module.exports = {
 
     // Sets configuration for Selenium Server
     selenium: {
-        start_process: false,
+        start_process: true,
         server_path: seleniumServer.path,
         start_session: true,
         chromedriver: chromeDriver.path,
@@ -40,12 +40,12 @@ module.exports = {
                 browserName: 'chrome',
                 javascriptEnabled: true,
                 acceptSslCerts: true,
-//                 chromeOptions : {
-//                     args: [
-//                         '--headless', '--disable-gpu'
-//                     //'--window-size=1024,768'
-//                     ]
-//                 }
+                chromeOptions : {
+                    args: [
+                        '--headless', '--disable-gpu'
+                    //'--window-size=1024,768'
+                    ]
+                }
             },
             screenshots: {
                 enabled: true,
