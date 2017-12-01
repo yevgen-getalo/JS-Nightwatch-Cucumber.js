@@ -40,12 +40,12 @@ module.exports = {
                 browserName: 'chrome',
                 javascriptEnabled: true,
                 acceptSslCerts: true,
-                chromeOptions : {
-                    args: [
-                        '--headless', '--disable-gpu'
-                    //'--window-size=1024,768'
-                    ]
-                }
+//                 chromeOptions : {
+//                     args: [
+//                         '--headless', '--disable-gpu'
+//                     //'--window-size=1024,768'
+//                     ]
+//                 }
             },
             screenshots: {
                 enabled: true,
