@@ -23,7 +23,7 @@ Background:
     Then site should be shown in selected language
 
   Scenario: Verify checkout
-    When type into search field require model "Sony Xperia XZ F8332 Forest Blue"
+    When type into search field require model "Sony Xperia XZ1 G8342 Black"
     When click on the buy button
     Then check that cart page is opened
 
